@@ -1,4 +1,4 @@
-screen.lockOrientation('landscape');
+screen.lockOrientation("landscape-primary");
 
 const keys = {
   'a': 'C',
