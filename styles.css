@@ -28,9 +28,8 @@
   position: absolute;
   height: 100px;
   width: 100px;
-  /* border: solid black; */
   border-radius: 50px;
-  transform: translate(-170px, -70px);
+  transform: translate(-175px, -70px);
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(20, 1fr);
@@ -43,6 +42,116 @@
   border-radius: 50px;
   background-color: black;
   justify-self: center;
+}
+
+.screen {
+  height: 100px;
+  width: 200px;
+  position: absolute;
+  transform: translate(0, -70px);
+  background-color: white;
+  padding: 10px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 9px;
+}
+
+.oct-num {
+  height: 50px;
+  width: 50px;
+}
+
+.effect-container {
+  width: 180px;
+  height: 50px;
+  /* border: solid red; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 8px;
+  margin-top: 4px;
+  position: absolute;
+}
+
+.effect-button {
+  /* height: 5px;
+  width: 10px; */
+  outline: solid .05px black;
+  font-size: 8px;
+  display: grid;
+  place-items: center;
+}
+
+.effect-button:hover {
+  cursor: pointer;
+}
+
+.synthButt-container-one {
+  height: 70px;
+  width: 80px;
+  /* border: solid red; */
+  position: absolute;
+  transform: translate(197px, 50px);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.synthButt-container-one p {
+  font-size: 10px;
+}
+
+.synthButt-container-two {
+  height: 70px;
+  width: 80px;
+  /* border: solid red; */
+  position: absolute;
+  transform: translate(197px, 100px) rotate(180deg);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.synth-triangle {
+  position: relative;
+  background-color: #202020;
+  text-align: left;
+}
+
+.synth-triangle:before,
+.synth-triangle:after {
+  content: '';
+  position: absolute;
+  background-color: inherit;
+}
+
+.synth-triangle,
+.synth-triangle:before,
+.synth-triangle:after {
+  width: 1.5em;
+  height: 1.5em;
+  border-top-right-radius: 30%;
+}
+
+.synth-triangle {
+  transform: rotate(-60deg) skewX(-30deg) scale(1, .866);
+}
+
+.synth-triangle:before {
+  transform: rotate(-135deg) skewX(-45deg) scale(1.414, .707) translate(0, -50%);
+}
+
+.synth-triangle:after {
+  transform: rotate(135deg) skewY(-45deg) scale(.707, 1.414) translate(50%);
+}
+
+.screen-overlay {
+  height: 100px;
+  width: 200px;
+  position: absolute;
+  transform: translate(-10px, -10px);
+  background-color: rgba(100, 39, 28, 0.7);
 }
 
 .knobs {
@@ -94,11 +203,15 @@
   width: 80px;
   /* border: solid red; */
   position: absolute;
-  transform: translate(-195px, 40px);
+  transform: translate(-195px, 50px);
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+}
+
+.octave-container-one p {
+  font-size: 10px;
 }
 
 .octave-container-two {
@@ -106,7 +219,7 @@
   width: 80px;
   /* border: solid red; */
   position: absolute;
-  transform: translate(-195px, 90px) rotate(180deg);
+  transform: translate(-195px, 100px) rotate(180deg);
   display: flex;
   justify-content: space-around;
   align-items: center;
